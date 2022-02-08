@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Word Length</ion-label>
+    <ion-select placeholder="Length" (ionChange)="setLength()" [(ngModel)]="valueLength">
+      <ion-select-option value="5">5</ion-select-option>
+      <ion-select-option value="6">6</ion-select-option>
+      <ion-select-option value="7">7</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Number of tries</ion-label>
+    <ion-select placeholder="Tries" (ionChange)="setTries();" [(ngModel)]="valueTries">
+      <ion-select-option value="5">5</ion-select-option>
+      <ion-select-option value="6">6</ion-select-option>
+      <ion-select-option value="7">7</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button (click)="startGame()">Start !</ion-button>
+  <p>{{erreur}}</p>
+
+</ion-content>
