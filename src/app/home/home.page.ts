@@ -1,6 +1,8 @@
+
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {SettingsService} from "../settings.service";
+import {SettingsService} from '../settings.service';
+
 
 @Component({
   selector: 'app-home',
@@ -8,6 +10,7 @@ import {SettingsService} from "../settings.service";
   styleUrls: ['home.page.scss'],
 })
 export class HomePage{
+
 
   wordLength: number;
   tries: number;
@@ -42,5 +45,4 @@ export class HomePage{
   goToSettings(){
     this.router.navigate(['/settings']);
   }
-
 }

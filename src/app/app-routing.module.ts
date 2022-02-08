@@ -12,10 +12,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'debug',
+    loadChildren: () => import('./debug/debug.module').then( m => m.DebugPageModule)
+  },
+  {
     path: 'settings',
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   },
-
 ];
 
 @NgModule({

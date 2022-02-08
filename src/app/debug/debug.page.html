@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>debug</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>{{motGenere}}</p>
+  <ion-input placeholder="Mot à verifier" id="entree"></ion-input>
+  <ion-button (click)="verifieMot()"></ion-button>
+  <p *ngIf="motExiste">il existe</p>
+
+
+
+</ion-content>
