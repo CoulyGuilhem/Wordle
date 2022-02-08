@@ -15,13 +15,11 @@
 
   <div id="container">
     <ion-button (click)="goToSettings()">Settings</ion-button>
-    {{loadSettings()}}
     <p> {{wordLength}} : {{tries}}</p>
-    <ion-button (click)="goToSettings()">Settings</ion-button>
   </div>
 
-  <div id="tries">
-    <span *ngFor="let i of word">[{{i}}]</span>
+  <div id="tries"*ngFor="let tries of board">
+    <span *ngFor="let letter of tries">[{{letter}}]</span>
   </div>
 
 
