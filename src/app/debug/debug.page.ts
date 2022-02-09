@@ -14,7 +14,7 @@ export class DebugPage implements OnInit {
   private motExiste: boolean;
 
   constructor(private session: JSONLectureService) {
-    this.taille = 5
+    this.taille = 5;
     this.getMotGenere(this.taille).subscribe(data => {
       if (data.ok === true) {
         this.motGenere = data.word;

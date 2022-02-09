@@ -13,7 +13,7 @@ export class JSONLectureService {
   private URL: string = "http://alixgoguey.fr/words/wordapi.php"
 
   public getMotAleatoire(taille): Observable<any> {
-    let requeteRandom = "cmd=rand";
+    let requeteRandom = 'cmd=rand';
     let requeteTaille = "size=" + taille;
     let requete = this.URL + "?" + requeteRandom + "&" + requeteTaille;
     return this.http.get(requete);
