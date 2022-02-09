@@ -25,7 +25,7 @@
   <div id="keyboard_line" *ngFor="let line of keyboard">
     <div class="key" *ngFor="let letter of line">
         <ion-button *ngIf="letter !== 'Enter' && letter !== '<--'" (click)="addLetter(letter)">[{{letter}}]</ion-button>
-        <ion-button *ngIf="letter === 'Enter'" (click)="checkMot()">[{{letter}}]</ion-button>
+        <ion-button *ngIf="letter === 'Enter'" (click)="verifieMot()">[{{letter}}]</ion-button>
         <ion-button *ngIf="letter === '<--'" (click)="deleteLetter()">[{{letter}}]</ion-button><br>
     </div>
   </div>
